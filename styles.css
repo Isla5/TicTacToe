@@ -1,0 +1,27 @@
+body {
+  background: #fcfff4;
+  margin: 0 !important;
+  padding: 0 !important;
+  display : flex;
+  flex-direction: column;
+  height: 100%;
+  align-self: flex-start;
+}
+
+h1 {
+  align-self: center;
+  color: Blue
+}
+
+#mainboard {
+  display: flex;
+  align-self: center;
+  margin: auto;
+}
+
+.item {
+  background: linear-gradient(135deg, #f0f9ff 0%,#cbebff 47%,#a1dbff 100%);
+  width: 136px;
+  height: 136px;
+  border: 1px solid lightBlue
+}
