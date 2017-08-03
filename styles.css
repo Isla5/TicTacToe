@@ -5,7 +5,6 @@ body {
   display : flex;
   flex-direction: column;
   height: 100%;
-  align-self: flex-start;
 }
 
 h1 {
@@ -13,10 +12,37 @@ h1 {
   color: white;
 }
 
+h3 {
+  align-self: center;
+  color: #cbebff;
+}
+
+form {
+  color: #cbebff;
+  margin: auto;
+  display: flex;
+  border: 1px solid lightBlue;
+  border-radius: 10px;
+  width: 90vw;
+  padding: 10px;
+  height:auto;
+  justify-content: space-around;
+}
+
+button {
+  border-radius: 10px;
+  min-width: 73px;
+}
+
+input {
+  margin-right: 10px
+}
+
 #mainboard {
   display: flex;
   align-self: center;
   margin: auto;
+  visibility: hidden;
 }
 
 .item {

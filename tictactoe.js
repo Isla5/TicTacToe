@@ -1,10 +1,30 @@
 $(document).ready(function() {
+  var boxSize = 0;
+  var player = '';
+  var oPoints=0;
+  var xPoints=0;
   var x = 'x';
   var o = 'o';
   var n = 0;
 
-  var oPoints=0;
-  var xPoints=0;
+  $('input').on('click', function (e) {
+    if (['xPlayer', 'oPlayer'].includes(e.target.value)) {
+      player=e.target.value;
+      console.log(player, boxSize)
+    } else {
+      boxSize=e.target.value;
+      console.log(player, boxSize)
+    }
+  })
+
+  $('button').on('click', function (e) {
+    e.preventDefault();
+    if( boxSize === '9' && player === 'xPlayer' ) {
+      $("#mainboard").css("visibility", "visible")
+    } else {
+      alert("Please choose your player and box sizes")
+    }
+  })
 
   var winningPoints = [
     14, 30, 46, 78, 142, 270, 526,
