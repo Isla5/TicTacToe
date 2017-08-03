@@ -1,5 +1,5 @@
 body {
-  background: #fcfff4;
+  background: #1f2b42;
   margin: 0 !important;
   padding: 0 !important;
   display : flex;
@@ -10,7 +10,7 @@ body {
 
 h1 {
   align-self: center;
-  color: Blue
+  color: white;
 }
 
 #mainboard {
@@ -23,5 +23,12 @@ h1 {
   background: linear-gradient(135deg, #f0f9ff 0%,#cbebff 47%,#a1dbff 100%);
   width: 136px;
   height: 136px;
-  border: 1px solid lightBlue
+  border: 1px solid lightBlue;
+  border-radius: 10px;
+  margin: 10px 5px;
+  cursor: pointer
+}
+
+.item:hover {
+  background: linear-gradient(135deg, #f0f9ff 0%,#828ea3 51%,  #a4adbc 100%);
 }
