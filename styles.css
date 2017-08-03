@@ -26,9 +26,21 @@ h1 {
   border: 1px solid lightBlue;
   border-radius: 10px;
   margin: 10px 5px;
-  cursor: pointer
+  cursor: pointer;
+  font-size: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center
 }
 
 .item:hover {
   background: linear-gradient(135deg, #f0f9ff 0%,#828ea3 51%,  #a4adbc 100%);
+}
+
+.o {
+  background:lightGreen
+}
+
+.x {
+  background: pink
 }

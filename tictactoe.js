@@ -6,24 +6,23 @@ $(document).ready(function() {
   var oPoints=0;
   var xPoints=0;
 
-  var winningPoints = [14, 112, 896, 146, 292, 584, 546, 168];
-
-  var box1 = {selector: $('#box1')};
-  var box2 = {selector: $('#box2')};
-  var box3 = {selector: $('#box3')};
-  var box4 = {selector: $('#box4')};
-  var box5 = {selector: $('#box5')};
-  var box6 = {selector: $('#box6')};
-  var box7 = {selector: $('#box7')};
-  var box8 = {selector: $('#box8')};
-  var box9 = {selector: $('#box9')};
+  var winningPoints = [
+    14, 30, 46, 78, 142, 270, 526,
+    112, 114, 116, 120, 240, 368, 624,
+    896, 898, 900, 904, 912, 928, 960,
+    146, 150, 154, 178, 210, 402, 658,
+    292, 294, 300, 308, 356, 420, 804,
+    584, 586, 588, 600, 616, 712, 840,
+    546, 550, 554, 562, 610, 674, 802,
+    168, 170, 172, 184, 232, 424, 680
+  ]
 
   $('.item').on('click', function () {
     if (n === 8) {
       n=0;
       xPoints=0;
       oPoints=0;
-      alert('Try again 3:)');
+      alert('Nah, try again');
       $('.item').text('');
       $('.item').removeClass('x');
       $('.item').removeClass('o');
